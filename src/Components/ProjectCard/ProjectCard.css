@@ -1,0 +1,7 @@
+.project-card-container{
+    position: relative;
+    background-color: gray;
+    width: 150px;
+    height: 100px;
+    margin-left: 20px;
+}

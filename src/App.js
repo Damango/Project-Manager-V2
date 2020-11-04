@@ -1,13 +1,10 @@
-import React from 'react';
 
 import './App.css';
-import LandingPage from "./components/LandingPage/LandingPage"
+import ProjectManager from "./Components/ProjectManager/ProjectManager"
 function App() {
   return (
     <div className="App">
-
-      <LandingPage />
-
+      <ProjectManager />
     </div>
   );
 }
