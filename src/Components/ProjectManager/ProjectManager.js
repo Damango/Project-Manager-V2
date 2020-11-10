@@ -49,6 +49,7 @@ const ProjectManager = () => {
             workSpaces: [
                 {
                     workSpaceTitle: "Development",
+                    workSpaceID: 0,
                     workSpaceTasks: {
 
                         openTasks: [
@@ -89,6 +90,7 @@ const ProjectManager = () => {
                     }
                 }, {
                     workSpaceTitle: "Design",
+                    workSpaceID: 1,
                     workSpaceTasks: {
 
                         openTasks: [

@@ -1,3 +1,135 @@
 .project-view-container{
-    background-color: red;
+    position: relative;
+    height: 100%;
+    width: 100%;
+   
+}
+
+.close-view{
+    position: absolute;
+    font-size: 30px;
+    top: 40px;
+    right: 70px;
+    z-index: 5;
+}
+
+.close-view:hover{
+    cursor: pointer;
+}
+
+
+.project-side-bar{
+    height: 100vh;
+    width: 220px;
+    float: left;
+    background-color: white;
+    border-right: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+.project-title{
+    font-size: 20px;
+    
+}
+.project-selector-container{
+    position: relative;
+  
+    height: 100px;
+    border-bottom: 1px solid black;
+}
+
+.project-selector{
+    position: relative;
+    border: 1px solid black;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 50px;
+    width: 150px;
+}
+
+.project-logo{
+    
+    position: relative;
+
+    top: 50%;
+    transform: translateY(-50%);
+   
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.project-title{
+position: relative;
+top: 50%;
+transform: translateY(-50%);
+display: inline-block;
+}
+
+
+.project-overview{
+    margin-top: 80px;
+    margin-left: 35px;
+}
+
+
+.project-work-spaces-list{
+    margin-top: 100px;
+    margin-left: 35px;
+}
+
+.work-spaces-heading{
+    margin-bottom: 30px;
+}
+
+.project-item{
+    margin-top: 30px;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.project-item:hover{
+    cursor: pointer;
+}
+
+
+
+.project-item i{
+    display: inline-block;
+    margin-right: 22px;
+    font-size: 20px;
+    width: 20px;
+}
+
+
+
+.work-spaces-heading{
+    font-family: "Fira Sans Condensed";
+    font-weight: bold;
+    font-size: 23px;
+  
+    display: inline-block;
+}
+
+.add-work-space-button{
+    
+    position: relative;
+    top: -3px;
+    left: 20px;
+    border-style: none;
+    border: 1px solid rgb(128, 128, 128);
+    font-size: 20px;
+    text-align: center;
+   
+}
+
+
+
+.project-main-view{
+    position: relative;
+
+    height: 100vh;
+    width: 88.4%;
+    float: left;
 }
