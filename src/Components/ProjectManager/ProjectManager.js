@@ -75,11 +75,19 @@ const ProjectManager = () => {
                                 author: "Justin Kessler"
                             }
                         ],
-                        closedTasks: [
+                        completedTasks: [
                             {
                                 taskText: "Become an Engineer",
                                 priority: "finished",
                                 status: "Closed",
+                                author: "Justin Kessler"
+                            }
+                        ],
+                        stuckTasks: [
+                            {
+                                taskText: "Million dollar deals getting DONE",
+                                priority: "important",
+                                status: "stuck",
                                 author: "Justin Kessler"
                             }
                         ]
