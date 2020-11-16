@@ -62,7 +62,7 @@ const ProjectView = (props) => {
 
 
         else if (projectState === "workspace") {
-            return (<WorkSpace workSpaceID={workSpaceView} workSpaceInfo={props.projectInfo.workSpaces[workSpaceView]} />)
+            return (<WorkSpace workSpaceID={workSpaceView} projectID={props.projectID} workSpaceInfo={props.projectInfo.workSpaces[workSpaceView]} />)
         }
     }
 

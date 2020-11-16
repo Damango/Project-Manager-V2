@@ -7,7 +7,7 @@ const ProjectManager = () => {
 
     const [viewState, setViewState] = useState(-1)
 
-    localStorage.setItem('projectv2', JSON.stringify([
+    /*localStorage.setItem('projectv2', JSON.stringify([
         {
             projectTitle: "Black Box",
             projectID: 0,
@@ -57,13 +57,15 @@ const ProjectManager = () => {
                                 taskText: "Eat some good food",
                                 priority: "urgent",
                                 status: "open",
-                                author: "Justin Kessler"
+                                author: "Justin Kessler",
+                                taskDate: "11/2/20"
                             },
                             {
                                 taskText: "Try Something New",
                                 priority: "urgent",
                                 status: "open",
-                                author: "Justin Kessler"
+                                author: "Justin Kessler",
+                                taskDate: "11/2/20"
                             }
 
                         ],
@@ -72,7 +74,8 @@ const ProjectManager = () => {
                                 taskText: "Work REAL GOOD",
                                 priority: "urgent",
                                 status: "In Progress",
-                                author: "Justin Kessler"
+                                author: "Justin Kessler",
+                                taskDate: "11/2/20"
                             }
                         ],
                         completedTasks: [
@@ -80,7 +83,8 @@ const ProjectManager = () => {
                                 taskText: "Become an Engineer",
                                 priority: "finished",
                                 status: "Closed",
-                                author: "Justin Kessler"
+                                author: "Justin Kessler",
+                                taskDate: "11/2/20"
                             }
                         ],
                         stuckTasks: [
@@ -88,7 +92,8 @@ const ProjectManager = () => {
                                 taskText: "Million dollar deals getting DONE",
                                 priority: "important",
                                 status: "stuck",
-                                author: "Justin Kessler"
+                                author: "Justin Kessler",
+                                taskDate: "11/2/20"
                             }
                         ]
 
@@ -262,7 +267,7 @@ const ProjectManager = () => {
                 }
             ]
         }
-    ]))
+    ]))*/
 
 
     let data = JSON.parse(localStorage.getItem('projectv2'));
