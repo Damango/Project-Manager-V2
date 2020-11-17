@@ -1,0 +1,108 @@
+.task-container{
+    position: relative;
+    margin-top: 20px;
+    border: 1px solid rgb(117, 117, 117);
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+    background-color: white;
+}
+
+.task-container:hover{
+    cursor: pointer;
+    background-color: rgb(223, 222, 222);
+}
+
+.task-selector{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.task-text{
+    display: inline-block;
+    width: 500px;
+    margin-left: 50px;
+   
+}
+
+.task-urgency{
+    display: inline-block;
+    margin-left: 200px;
+}
+
+.task-status{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.task-date{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.open-task{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color:#336cf0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    font-family: "Open Sans";
+    border-radius: 5px;
+}
+
+.in-progress-task{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color:#F1C42B;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    font-family: "Open Sans";
+    border-radius: 5px;
+}
+
+.stuck-task{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color:#E74C3C;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    font-family: "Open Sans";
+    border-radius: 5px;
+}
+
+.complete-task{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color:#2ecc71;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    font-family: "Open Sans";
+    border-radius: 5px;
+}
+
+
+.task-urgency{
+    background-color: black;
+    color: white;
+    width: 25px;
+    height: 24px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.task-date{
+    background-color: #34495e;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    font-family: 'Open Sans';
+    font-weight: bold;
+}

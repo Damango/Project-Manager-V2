@@ -1,0 +1,10 @@
+.work-space-selector{
+    margin-left: 10px;
+    font-family: Roboto;
+    margin-top: 15px;
+}
+
+.work-space-selector i{
+    margin-right: 5px;
+    color: gray;
+}

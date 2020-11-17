@@ -1,0 +1,112 @@
+.modal-overlay{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    background-color: rgba(2, 1, 1, 0.219);
+    width: 100vw;
+    height: 101vh;
+
+}
+
+.modal-overlay:hover{
+    cursor: pointer;
+}
+
+
+
+
+.task-modal-container{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 750px;
+    width: 800px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+    z-index: 5;
+    border-radius: 5px;
+}   
+
+.task-text-modal{
+    font-size: 23px;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    width: 510px;
+   
+}
+
+.task-description-modal{
+    margin-top: 30px;
+    width: 500px;
+    font-size: 18px;
+    font-family: 'Roboto';
+    
+}
+
+.task-modal-image{
+    position: relative;
+    background-color: rgb(187, 187, 187);
+    width: 500px;
+    height: 150px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.add-image-button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: "Open Sans";
+    color: white;
+}
+
+.task-modal-image:hover{
+    cursor: pointer;
+    background-color: rgb(117, 117, 117);
+}
+
+.task-modal-side-bar-heading{
+    margin-top: 20px;
+}
+
+.task-modal-status{
+    margin-top: 10px;
+    background-color: blue;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px 15px;
+    color: white;
+    font-family: Roboto;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.task-modal-side-bar{
+    position: absolute;
+    padding-left: 20px;
+
+    top: 0px;
+    right: 20px;
+    border-left: 1px solid black;
+    height: 100%;
+    width: 220px;
+
+}
+
+.close-task-modal{
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    font-weight: bold;
+}
+
+
+.close-task-modal:hover{
+    cursor: pointer;
+}
+

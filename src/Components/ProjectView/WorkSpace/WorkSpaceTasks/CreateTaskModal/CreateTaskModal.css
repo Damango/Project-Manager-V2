@@ -1,0 +1,86 @@
+.create-task-modal-container{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    height: 520px;
+    width: 500px;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.task-create-header{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: bold;
+    color: #2f3640;
+}
+
+.close-modal{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
+}
+
+.close-modal:hover{
+    cursor: pointer;
+}
+
+.task-heading-entry{
+    margin-top: 40px;
+}
+
+.create-task-modal-container input{
+    padding: 10px;
+    margin-top: 10px;
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+.task-description-input{
+    height: 100px;
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    resize: none;
+    padding: 10px;
+}
+
+.urgency-selection{
+    width: 200px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.urgency-selection option{
+    padding: 10px;
+}
+
+
+.submit-button{
+    position: absolute;
+    margin-top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    border-style: none;
+    color: white;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 19px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.submit-button:hover{
+    background-color: #27ae60;
+    cursor: pointer;
+}

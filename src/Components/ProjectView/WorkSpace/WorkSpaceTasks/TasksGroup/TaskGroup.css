@@ -1,0 +1,174 @@
+.work-space-tasks-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+margin-top: 50px;
+}
+
+
+
+.task-group-container{
+
+
+    background-color: white;
+    border: 1px solid rgb(149, 149, 149);
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.open-group-button{
+    margin-right: 20px;
+    margin-left: 10px;
+    border-style: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    color: white;
+   
+    text-align: center;
+    outline: none;
+}
+
+.open-group-button:hover{
+    cursor: pointer;
+}
+
+
+
+
+.open-tasks-closed .group-title{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color:#336cf0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    font-family: "Open Sans";
+    border-radius: 5px;
+}
+
+
+.open-tasks-open .group-title{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color:#336cf0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    font-family: "Open Sans";
+    border-radius: 5px;
+}
+.open-tasks{
+    overflow-y: hidden;
+    height: 30px;
+}
+
+.open-tasks-open{
+    height: 200px;
+    transition: 0.3s;
+}
+
+.open-tasks-closed{
+    overflow-y: hidden;
+    height: 30px;
+    transition: 0.3s;
+}
+
+.the-test{
+    background-color: red;
+}
+
+
+
+
+.stuck-tasks .group-title{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color:#e74c3c;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    font-family: "Open Sans";
+    border-radius: 5px;
+}
+
+
+.complete-tasks .group-title{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color:#2ecc71;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    font-family: "Open Sans";
+    border-radius: 5px;
+}
+
+.open-title{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color:#336cf0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    font-family: "Open Sans";
+    border-radius: 5px;
+}
+
+.in-progress-title{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color:#f1c40f;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    font-family: "Open Sans";
+    border-radius: 5px;
+}
+
+.stuck-title{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color:#e74c3c;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    font-family: "Open Sans";
+    border-radius: 5px;
+}
+
+.complete-title{
+
+    display: inline-block;
+    padding: 5px 10px;
+    background-color:#2ecc71;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    font-family: "Open Sans";
+    border-radius: 5px;
+    
+}
+
+.tasks-open{
+    position: relative;
+    height: 500px;
+    transition: 0.6s;
+    overflow-y: scroll;
+}
+
+.tasks-closed{
+    position: relative;
+    overflow-y: hidden;
+    height: 30px;
+    transition: 0.6s;
+}
+
+
+.the-test{
+    margin-top: 50px;
+    background-color: red;
+    padding: 10px;
+}

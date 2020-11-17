@@ -58,14 +58,16 @@ const ProjectManager = () => {
                                 priority: "urgent",
                                 status: "open",
                                 author: "Justin Kessler",
-                                taskDate: "11/2/20"
+                                taskDate: "11/2/20",
+                                taskDescription: "Something really different is happeneing with trying something new I can feel myself changing everyday. I think I like this. I'm going to carry on."
                             },
                             {
                                 taskText: "Try Something New",
                                 priority: "urgent",
                                 status: "open",
                                 author: "Justin Kessler",
-                                taskDate: "11/2/20"
+                                taskDate: "11/2/20",
+                                taskDescription: "Really make sure that you're pushing yourself everyday so you can see that improvement every day."
                             }
 
                         ],
@@ -193,13 +195,15 @@ const ProjectManager = () => {
                                 taskText: "Eat some good food",
                                 priority: "urgent",
                                 status: "open",
-                                author: "Justin Kessler"
+                                author: "Justin Kessler",
+                                taskDescription: "You really have to start eating more food if you plan on having enough to eat so you can gain enough muscle to impress these niggas."
                             },
                             {
                                 taskText: "Try Something New",
                                 priority: "urgent",
                                 status: "open",
-                                author: "Justin Kessler"
+                                author: "Justin Kessler",
+                                taskDescription: "Something really different is happeneing with trying something new I can feel myself changing everyday. I think I like this. I'm going to carry on."
                             }
 
                         ],

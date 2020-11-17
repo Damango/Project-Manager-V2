@@ -1,0 +1,123 @@
+.work-space-tasks-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+margin-top: 50px;
+}
+
+
+
+.task-group-container{
+
+
+    background-color: white;
+    border: 1px solid rgb(212, 212, 212);
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.open-group-button{
+    margin-right: 20px;
+    margin-left: 10px;
+    border-style: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    color: white;
+   
+    text-align: center;
+    outline: none;
+}
+
+.open-group-button:hover{
+    cursor: pointer;
+}
+
+
+
+
+.open-tasks-closed .group-title{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color:#336cf0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    font-family: "Open Sans";
+    border-radius: 5px;
+}
+
+
+.open-tasks-open .group-title{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color:#336cf0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    font-family: "Open Sans";
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+.in-progress-tasks .group-title{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color:#f1c40f;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    font-family: "Open Sans";
+    border-radius: 5px;
+}
+
+.stuck-tasks .group-title{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color:#e74c3c;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    font-family: "Open Sans";
+    border-radius: 5px;
+}
+
+
+.complete-tasks .group-title{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color:#2ecc71;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    font-family: "Open Sans";
+    border-radius: 5px;
+}
+
+
+
+.create-task-button{
+    background-color: #2ecc71;
+    border-style: none;
+    color: white;
+    font-family: 'Open Sans';
+    padding: 10px;
+    font-weight: bold;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.create-task-button:hover{
+    cursor: pointer;
+    background-color: #27ae60;
+}
+
+
+
