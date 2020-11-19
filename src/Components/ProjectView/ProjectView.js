@@ -8,6 +8,7 @@ const ProjectView = (props) => {
 
     const [projectState, setProjectState] = useState(-1);
     const [workSpaceView, setWorkSpaceView] = useState(-1);
+    const [workSpaceRender, setWorkSpaceRender] = useState(0);
 
 
 
@@ -33,7 +34,7 @@ const ProjectView = (props) => {
                 <div className="project-work-spaces-list">
                     <div className="work-spaces-heading">Work Spaces</div>
                     <button className="add-work-space-button">+</button>
-                    {props.projectInfo.workSpaces.map((workspace) => <WorkSpaceSelector title={workspace.workSpaceTitle} workSpaceID={workspace.workSpaceID} changeView={handleWorkSpaceView} />)}
+                    {props.projectInfo.workSpaces.map((workspace) => <WorkSpaceSelector title={workspace.workSpaceTitle} workSpaceID={workspace.workSpaceID} changeView={handleWorkSpaceView} reRenderWorkSpace={reRenderWorkSpace} />)}
                 </div>
             </div>
 
@@ -46,6 +47,13 @@ const ProjectView = (props) => {
     </div>);
 
 
+    function reRenderWorkSpace() {
+        //setWorkSpaceRender(workSpaceRender + 1);
+        setProjectState('');
+        setTimeout(function () {
+            setProjectState('workspace');
+        }, 10)
+    }
 
     function closeView() {
         props.changeView(-1);
@@ -62,8 +70,12 @@ const ProjectView = (props) => {
 
 
         else if (projectState === "workspace") {
-            return (<WorkSpace workSpaceID={workSpaceView} projectID={props.projectID} workSpaceInfo={props.projectInfo.workSpaces[workSpaceView]} />)
+            //Have the workspace information be based on the state of this component
+            //Change the state based on the workSpace selector that is clicked
+            return (<WorkSpace workSpaceID={workSpaceView} projectID={props.projectID} workSpaceInfo={props.projectInfo.workSpaces[workSpaceView]} workSpaceRender={workSpaceRender} />)
         }
+
+
     }
 
     function handleWorkSpaceView(number) {
@@ -72,10 +84,7 @@ const ProjectView = (props) => {
     }
 
 
-    function doChange() {
 
-        alert("Project State: " + projectState);
-    }
 }
 
 export default ProjectView;

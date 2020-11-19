@@ -1,6 +1,6 @@
 
 .work-space-container{
-    margin-left: 150px;
+    margin-left: 120px;
     position: relative;
 
     width: 80%;
@@ -27,6 +27,10 @@
     display: inline-block;
     font-size: 25px;
     margin-right: 25px;
+}
+
+.view-selector:hover{
+    cursor: pointer;
 }
 
 .work-space-main-view{
