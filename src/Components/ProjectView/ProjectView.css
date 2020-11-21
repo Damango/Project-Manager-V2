@@ -19,17 +19,11 @@
 
 
 .project-side-bar{
-    position: fixed;
-    z-index: 5;
     height: 100vh;
     width: 220px;
     float: left;
     background-color: white;
     border-right: 1px solid rgba(0, 0, 0, 0.274);
-}
-
-.project-main-view{
-    margin-left: 220px;
 }
 
 .project-title{

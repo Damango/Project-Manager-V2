@@ -6,7 +6,6 @@ import TaskModal from "./TaskModal/TaskModal"
 const WorkSpaceTasks = (props) => {
 
     const [taskData, setTaskData] = useState(props.tasks);
-
     const [testNumber, setTestNumber] = useState(0);
 
     const [taskModal, setTaskModal] = useState(0);
@@ -16,7 +15,7 @@ const WorkSpaceTasks = (props) => {
 
     return (<div className="work-space-tasks-container">
 
-        <button className="create-task-button" onClick={createTask}>Create Task + </button>
+        <button className="create-task-button" onClick={createTask}>Create Task +</button>
 
         <TaskGroup type={"open"} tasks={taskData.openTasks} taskModalHandler={taskModalHandler} />
 

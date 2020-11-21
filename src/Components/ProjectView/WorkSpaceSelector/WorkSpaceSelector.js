@@ -9,7 +9,6 @@ const WorkSpaceSelector = (props) => {
 
     function changeWorkSpaceView() {
         props.changeView(props.workSpaceID);
-        props.reRenderWorkSpace();
     }
 }
 
