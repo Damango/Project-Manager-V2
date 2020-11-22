@@ -7,7 +7,7 @@ const ProjectManager = () => {
 
     const [viewState, setViewState] = useState(-1)
 
-    localStorage.setItem('projectv2', JSON.stringify([
+    /*localStorage.setItem('projectv2', JSON.stringify([
         {
             projectTitle: "Black Box",
             projectID: 0,
@@ -55,6 +55,79 @@ const ProjectManager = () => {
                         openTasks: [
                             {
                                 taskText: "Eat some good food",
+                                priority: "critical",
+                                status: "open",
+                                author: "Justin Kessler",
+                                taskDate: "11/2/20",
+                                taskDescription: "Something really different is happeneing with trying something new I can feel myself changing everyday. I think I like this. I'm going to carry on."
+                            },
+                            {
+                                taskText: "Try Something New",
+                                priority: "serious",
+                                status: "open",
+                                author: "Justin Kessler",
+                                taskDate: "11/2/20",
+                                taskDescription: "Really make sure that you're pushing yourself everyday so you can see that improvement every day."
+                            },
+                            {
+                                taskText: "Eat some good food",
+                                priority: "moderate",
+                                status: "open",
+                                author: "Justin Kessler",
+                                taskDate: "11/2/20",
+                                taskDescription: "Something really different is happeneing with trying something new I can feel myself changing everyday. I think I like this. I'm going to carry on."
+                            },
+                            {
+                                taskText: "Finish Project",
+                                priority: "moderate",
+                                status: "open",
+                                author: "Justin Kessler",
+                                taskDate: "11/2/20",
+                                taskDescription: "Something really different is happeneing with trying something new I can feel myself changing everyday. I think I like this. I'm going to carry on."
+                            }
+
+                        ],
+                        inProgressTasks: [
+                            {
+                                taskText: "Finish Project",
+                                priority: "moderate",
+                                status: "open",
+                                author: "Justin Kessler",
+                                taskDate: "11/2/20",
+                                taskDescription: "Something really different is happeneing with trying something new I can feel myself changing everyday. I think I like this. I'm going to carry on."
+                            }
+                        ],
+                        completedTasks: [
+                            {
+                                taskText: "Become an Engineer",
+                                priority: "finished",
+                                status: "Closed",
+                                author: "Justin Kessler",
+                                taskDate: "11/2/20"
+                            }
+                        ],
+                        stuckTasks: [
+                            {
+                                taskText: "Million dollar deals getting DONE",
+                                priority: "serious",
+                                status: "stuck",
+                                author: "Justin Kessler",
+                                taskDate: "11/2/20"
+                            }
+                        ]
+
+
+
+
+                    }
+                }, {
+                    workSpaceTitle: "Design",
+                    workSpaceID: 1,
+                    workSpaceTasks: {
+
+                        openTasks: [
+                            {
+                                taskText: "Eat some good food",
                                 priority: "urgent",
                                 status: "open",
                                 author: "Justin Kessler",
@@ -96,47 +169,6 @@ const ProjectManager = () => {
                                 status: "stuck",
                                 author: "Justin Kessler",
                                 taskDate: "11/2/20"
-                            }
-                        ]
-
-
-
-
-                    }
-                }, {
-                    workSpaceTitle: "Design",
-                    workSpaceID: 1,
-                    workSpaceTasks: {
-
-                        openTasks: [
-                            {
-                                taskText: "Eat some good food",
-                                priority: "urgent",
-                                status: "open",
-                                author: "Justin Kessler"
-                            },
-                            {
-                                taskText: "Try Something New",
-                                priority: "urgent",
-                                status: "open",
-                                author: "Justin Kessler"
-                            }
-
-                        ],
-                        inProgressTasks: [
-                            {
-                                taskText: "Work REAL GOOD",
-                                priority: "urgent",
-                                status: "In Progress",
-                                author: "Justin Kessler"
-                            }
-                        ],
-                        closedTasks: [
-                            {
-                                taskText: "Become an Engineer",
-                                priority: "finished",
-                                status: "Closed",
-                                author: "Justin Kessler"
                             }
                         ]
 
@@ -271,7 +303,7 @@ const ProjectManager = () => {
                 }
             ]
         }
-    ]))
+    ]))*/
 
 
     let data = JSON.parse(localStorage.getItem('projectv2'));

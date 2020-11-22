@@ -1,7 +1,19 @@
 import React from 'react';
+import { useSpring, animated } from 'react-spring';
 import "./CreateTaskModal.css"
 const CreateTaskModal = (props) => {
-    return (<div className="create-task-modal-container">
+
+
+
+    const taskModalSpring = useSpring({
+        from: { height: 0 },
+        to: {
+            height: 550
+        }
+    })
+
+
+    return (<animated.div style={taskModalSpring} className="create-task-modal-container">
         <div className="close-modal" onClick={props.closeModal}>X</div>
         <div className="task-create-header">Create Task</div>
         <div className="task-heading-entry">
@@ -24,7 +36,7 @@ const CreateTaskModal = (props) => {
 
         </div>
         <button className="submit-button" onClick={updateData}>Submit</button>
-    </div>);
+    </animated.div>);
 
 
     function updateData() {

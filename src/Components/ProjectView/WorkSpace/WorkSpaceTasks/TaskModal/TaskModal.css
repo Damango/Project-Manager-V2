@@ -6,6 +6,7 @@
     background-color: rgba(2, 1, 1, 0.219);
     width: 100vw;
     height: 101vh;
+    
 
 }
 
@@ -28,6 +29,7 @@
     padding: 20px;
     z-index: 5;
     border-radius: 5px;
+    overflow: hidden;
 }   
 
 .task-text-modal{
@@ -110,3 +112,16 @@
     cursor: pointer;
 }
 
+.critical{
+    color: red;
+    background-color: rgb(250, 136, 136);
+}
+.serious{
+    color: orangered;
+    background-color: rgb(255, 150, 112);
+}
+.moderate{
+    color: green;
+    background-color: rgb(103, 221, 103);
+}
+.low{}

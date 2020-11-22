@@ -1,9 +1,17 @@
 import React from 'react';
 import "./TaskModal.css";
+import { useSpring, animated } from 'react-spring';
 const TaskModal = (props) => {
+
+    const taskModalSpring = useSpring({
+        from: { height: 0 },
+        to: { height: 750 }
+    })
+
+
     return (
         <div className="task-modal-wrapper">
-            <div className="task-modal-container">
+            <animated.div style={taskModalSpring} className="task-modal-container">
 
                 <div className="close-task-modal" onClick={props.taskModalHandler}>X</div>
                 <div className="task-text-modal">{props.taskData.taskText}</div>
@@ -25,7 +33,7 @@ const TaskModal = (props) => {
 
 
 
-            </div>
+            </animated.div>
             <div className="modal-overlay" onClick={props.taskModalHandler}>  </div>
         </div>);
 }

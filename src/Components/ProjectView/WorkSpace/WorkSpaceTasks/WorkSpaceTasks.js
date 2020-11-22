@@ -1,21 +1,28 @@
 import React, { useState } from 'react';
 import "./WorkSpaceTasks.css"
+import { useSpring, animated } from 'react-spring';
 import TaskGroup from "./TasksGroup/TaskGroup";
 import CreateTaskModal from "./CreateTaskModal/CreateTaskModal";
 import TaskModal from "./TaskModal/TaskModal"
 const WorkSpaceTasks = (props) => {
 
     const [taskData, setTaskData] = useState(props.tasks);
+
     const [testNumber, setTestNumber] = useState(0);
 
     const [taskModal, setTaskModal] = useState(0);
     const [taskModalData, setTaskModalData] = useState({});
     const [createModal, setCreateModal] = useState(0);
 
+    const springAnimation = useSpring({
+        from: { opacity: 0 },
+        to: { opacity: 1 }
+    })
 
-    return (<div className="work-space-tasks-container">
 
-        <button className="create-task-button" onClick={createTask}>Create Task +</button>
+    return (<animated.div className="work-space-tasks-container" style={springAnimation}>
+
+        <button className="create-task-button" onClick={createTask}>Create Task + </button>
 
         <TaskGroup type={"open"} tasks={taskData.openTasks} taskModalHandler={taskModalHandler} />
 
@@ -31,7 +38,7 @@ const WorkSpaceTasks = (props) => {
 
 
 
-    </div>);
+    </animated.div>);
 
 
 
