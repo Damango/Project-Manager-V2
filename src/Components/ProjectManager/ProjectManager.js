@@ -59,7 +59,14 @@ const ProjectManager = () => {
                                 status: "open",
                                 author: "Justin Kessler",
                                 taskDate: "11/2/20",
-                                taskDescription: "Something really different is happeneing with trying something new I can feel myself changing everyday. I think I like this. I'm going to carry on."
+                                taskDescription: "Something really different is happeneing with trying something new I can feel myself changing everyday. I think I like this. I'm going to carry on.",
+                                comments: [
+                                    {
+                                        commentText: "Just a real quick addition to what Trevor said about the project",
+                                        commentAuthor: "Justin Kessler",
+                                        commentDate: '11-23-20'
+                                    }
+                                ]
                             },
                             {
                                 taskText: "Try Something New",

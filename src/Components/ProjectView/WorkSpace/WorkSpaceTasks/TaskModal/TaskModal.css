@@ -77,9 +77,9 @@
 
 .task-modal-status{
     margin-top: 10px;
-    background-color: blue;
+    background-color: #336CF0;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 20px;
     padding: 5px 15px;
     color: white;
     font-family: Roboto;
@@ -112,16 +112,46 @@
     cursor: pointer;
 }
 
+
+.task-modal-priority{
+    font-family: 'Open Sans';
+    font-weight: bold;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: red;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+
 .critical{
-    color: red;
+    color: rgb(189, 0, 0);
     background-color: rgb(250, 136, 136);
 }
 .serious{
-    color: orangered;
+    color: rgb(200, 53, 0);
     background-color: rgb(255, 150, 112);
 }
 .moderate{
-    color: green;
+    color: rgb(0, 114, 0);
     background-color: rgb(103, 221, 103);
 }
-.low{}
+
+
+.task-modal-date-created{
+    background-color: #2f3640;
+    display: inline-block;
+    color: white;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+
+.task-modal-task-author{
+    margin-top: 10px;
+}

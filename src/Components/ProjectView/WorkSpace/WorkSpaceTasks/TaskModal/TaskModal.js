@@ -9,6 +9,39 @@ const TaskModal = (props) => {
     })
 
 
+    let modalStatus;
+    let priority;
+    let priorityText;
+    let priorityStyle;
+
+    if (props.taskData.status === 'open') {
+        modalStatus = 'OPEN';
+    }
+    if (props.taskData.status === 'in-progress') {
+        modalStatus = 'IN-PROGRESS';
+    }
+    if (props.taskData.status === 'stuck') {
+        modalStatus = 'STUCK';
+    }
+    if (props.taskData.status === 'complete') {
+        modalStatus = 'COMPLETE'
+    }
+
+
+    if (props.taskData.priority === 'critical') {
+        priority = <i class="fas fa-angle-double-up"></i>;
+        priorityText = 'Critical';
+        priorityStyle = 'critical'
+    }
+    if (props.taskData.priority === 'serious') {
+        priority = <i class="fas fa-angle-double-up"></i>;
+        priorityText = 'Serious';
+    }
+    if (props.taskData.priority === 'moderate') {
+        priority = <i class="fas fa-angle-down"></i>;
+        priorityText = 'Moderate';
+    }
+
     return (
         <div className="task-modal-wrapper">
             <animated.div style={taskModalSpring} className="task-modal-container">
@@ -24,11 +57,17 @@ const TaskModal = (props) => {
                 </div>
                 <div className="task-modal-side-bar">
                     <div className="task-modal-side-bar-heading">Status</div>
-                    <div className="task-modal-status">{props.taskData.status}</div>
+                    <div className="task-modal-status">{modalStatus}</div>
 
                     <div className="task-modal-side-bar-heading">Priority</div>
-                    <div className="task-modal-priority">{props.taskData.priority}</div>
+                    <div className={"task-modal-priority " + props.taskData.priority} >{priority} {priorityText}</div>
 
+
+                    <div className="task-modal-side-bar-heading">Date Created</div>
+                    <div className="task-modal-date-created">{props.taskData.taskDate}</div>
+
+                    <div className="task-modal-side-bar-heading">Task Author</div>
+                    <div className="task-modal-task-author">{props.taskData.author}</div>
                 </div>
 
 

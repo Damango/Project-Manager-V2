@@ -27,7 +27,7 @@ const CreateTaskModal = (props) => {
         <div className="task-urgency-entry">
             <div className="head-entry-urgency">Task Urgency</div>
             <select className="urgency-selection">
-                <option value="important">Critical</option>
+                <option value="critical">Critical</option>
                 <option value="serious">Serious</option>
                 <option value="moderate">Moderate</option>
                 <option value="low">Low</option>
@@ -42,8 +42,17 @@ const CreateTaskModal = (props) => {
     function updateData() {
         let heading = document.querySelector(".task-heading-value").value;
         let author = 'Justin Kessler';
-        let urgency = 'important';
+        let urgency = document.querySelector('.urgency-selection').value;
         let description = document.querySelector('.task-description-input').value;
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+        var yyyy = today.getFullYear();
+        yyyy = String(yyyy);
+        yyyy = yyyy[2] + yyyy[3];
+
+        today = mm + '/' + dd + '/' + yyyy;
+
 
 
 
@@ -52,7 +61,8 @@ const CreateTaskModal = (props) => {
             taskText: heading,
             status: 'open',
             priority: urgency,
-            taskDescription: description
+            taskDescription: description,
+            taskDate: today
         }
 
         props.updateData(newData);
