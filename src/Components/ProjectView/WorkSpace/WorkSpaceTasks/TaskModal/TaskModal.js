@@ -1,30 +1,49 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./TaskModal.css";
 import { useSpring, animated } from 'react-spring';
 const TaskModal = (props) => {
 
-    const taskModalSpring = useSpring({
+
+
+    const [statusChangeState, setStatusChangeState] = useState(0);
+
+    let height = 1200;
+
+    if (window.innerHeight < 900) {
+        height = 600;
+
+    }
+    else {
+        height = 1200;
+    }
+
+
+    let taskModalSpring = useSpring({
         from: { height: 0 },
-        to: { height: 750 }
+        to: { height: height }
     })
 
-
     let modalStatus;
+    let statusColor;
     let priority;
     let priorityText;
     let priorityStyle;
 
-    if (props.taskData.status === 'open') {
+    if (props.taskData.status === 'Open') {
         modalStatus = 'OPEN';
+        statusColor = 'task-modal-status-open';
     }
-    if (props.taskData.status === 'in-progress') {
+    if (props.taskData.status === 'In-Progress') {
         modalStatus = 'IN-PROGRESS';
+        statusColor = 'task-modal-status-in-progress';
     }
-    if (props.taskData.status === 'stuck') {
+    if (props.taskData.status === 'Stuck') {
         modalStatus = 'STUCK';
+        statusColor = 'task-modal-status-stuck';
     }
-    if (props.taskData.status === 'complete') {
+    if (props.taskData.status === 'Complete') {
         modalStatus = 'COMPLETE'
+        statusColor = 'task-modal-status-complete';
     }
 
 
@@ -57,7 +76,8 @@ const TaskModal = (props) => {
                 </div>
                 <div className="task-modal-side-bar">
                     <div className="task-modal-side-bar-heading">Status</div>
-                    <div className="task-modal-status">{modalStatus}</div>
+                    <div className={statusColor} onClick={openChangeStatus}>{modalStatus}</div>
+                    {renderChangeStatus()}
 
                     <div className="task-modal-side-bar-heading">Priority</div>
                     <div className={"task-modal-priority " + props.taskData.priority} >{priority} {priorityText}</div>
@@ -75,6 +95,40 @@ const TaskModal = (props) => {
             </animated.div>
             <div className="modal-overlay" onClick={props.taskModalHandler}>  </div>
         </div>);
+
+
+
+    function openChangeStatus() {
+
+        if (statusChangeState === 0) {
+
+
+            setStatusChangeState(1);
+        }
+
+        else {
+            setStatusChangeState(0);
+        }
+
+
+    }
+
+    function renderChangeStatus() {
+
+        if (statusChangeState === 1) {
+            return (<div className="change-status-container">
+                <div className="change-status-selector open">OPEN</div>
+                <div className="change-status-selector in-progress">IN-PROGRESS</div>
+                <div className="change-status-selector stuck">STUCK</div>
+                <div className="change-status-selector complete">COMPLETED</div>
+            </div>)
+        }
+
+        else {
+            return '';
+        }
+
+    }
 }
 
 

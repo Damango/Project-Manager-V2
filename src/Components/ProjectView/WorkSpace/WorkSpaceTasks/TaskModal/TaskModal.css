@@ -10,6 +10,7 @@
 
 }
 
+
 .modal-overlay:hover{
     cursor: pointer;
 }
@@ -22,7 +23,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 750px;
+   
     width: 800px;
     background-color: white;
     border: 1px solid black;
@@ -75,17 +76,81 @@
     margin-top: 20px;
 }
 
-.task-modal-status{
+
+
+
+.task-modal-status-open{
     margin-top: 10px;
     background-color: #336CF0;
     border-radius: 5px;
     font-size: 20px;
     padding: 5px 15px;
     color: white;
-    font-family: Roboto;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+
+}
+
+.task-modal-status-open:hover{
+    background-color: #19409b;
+    cursor: pointer;
+}
+
+.task-modal-status-in-progress{
+    margin-top: 10px;
+    background-color: #F1C52A;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 15px;
+    color: white;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.task-modal-status-in-progress{
+    background-color: #b3921d;
+    cursor: pointer;
+}
+
+.task-modal-status-stuck{
+    margin-top: 10px;
+    background-color: #E74B3C;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 15px;
+    color: white;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.task-modal-status-stuck:hover{
+    background-color: #aa3227;
+    cursor: pointer;
+}
+
+.task-modal-status-complete{
+    margin-top: 10px;
+    background-color: #2FCC71;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 15px;
+    color: white;
+    font-family: 'Open Sans';
     font-weight: bold;
     display: inline-block;
 }
+
+.task-modal-status-complete:hover{
+    background-color: #209952;
+    cursor: pointer;
+}
+
 
 .task-modal-side-bar{
     position: absolute;
@@ -155,3 +220,47 @@
 .task-modal-task-author{
     margin-top: 10px;
 }
+
+.change-status-container{
+    position: absolute;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    height: auto;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.change-status-selector{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 5px;
+    background-color: rgb(16, 16, 177);
+    color: white;
+    border-radius: 5px;
+    font-family: 'Open Sans';
+    font-weight: bold;
+}
+
+
+.open{
+    background-color: #336CF0;
+}
+
+.in-progress{
+    background-color: #F1C52A;
+}
+
+.stuck{
+    background-color: #E74B3C;
+}
+
+.complete{
+    background-color: #2FCC71;
+}
+
+@media only screen and (max-height: 900px) {
+   
+
+  }

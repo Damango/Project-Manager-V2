@@ -8,22 +8,22 @@ const Task = (props) => {
     let urgencyStyle;
     let theUrgency;
 
-    if (props.taskInfo.status === 'open') {
+    if (props.taskInfo.status === 'Open') {
         statusStyle = 'open-task task-status';
         statusText = 'OPEN';
     }
 
-    if (props.taskInfo.status === 'In Progress') {
+    if (props.taskInfo.status === 'In-Progress') {
         statusStyle = 'in-progress-task task-status';
         statusText = 'IN PROGRESS';
     }
 
-    if (props.taskInfo.status === 'stuck') {
+    if (props.taskInfo.status === 'Stuck') {
         statusStyle = 'stuck-task task-status';
         statusText = 'STUCK';
     }
 
-    if (props.taskInfo.status === 'Closed') {
+    if (props.taskInfo.status === 'Complete') {
         statusStyle = 'complete-task task-status';
         statusText = 'COMPLETE';
     }

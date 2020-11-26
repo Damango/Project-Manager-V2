@@ -7,7 +7,7 @@ const ProjectManager = () => {
 
     const [viewState, setViewState] = useState(-1)
 
-    /*localStorage.setItem('projectv2', JSON.stringify([
+    localStorage.setItem('projectv2', JSON.stringify([
         {
             projectTitle: "Black Box",
             projectID: 0,
@@ -56,7 +56,7 @@ const ProjectManager = () => {
                             {
                                 taskText: "Eat some good food",
                                 priority: "critical",
-                                status: "open",
+                                status: "Open",
                                 author: "Justin Kessler",
                                 taskDate: "11/2/20",
                                 taskDescription: "Something really different is happeneing with trying something new I can feel myself changing everyday. I think I like this. I'm going to carry on.",
@@ -71,7 +71,7 @@ const ProjectManager = () => {
                             {
                                 taskText: "Try Something New",
                                 priority: "serious",
-                                status: "open",
+                                status: "Open",
                                 author: "Justin Kessler",
                                 taskDate: "11/2/20",
                                 taskDescription: "Really make sure that you're pushing yourself everyday so you can see that improvement every day."
@@ -79,7 +79,7 @@ const ProjectManager = () => {
                             {
                                 taskText: "Eat some good food",
                                 priority: "moderate",
-                                status: "open",
+                                status: "Open",
                                 author: "Justin Kessler",
                                 taskDate: "11/2/20",
                                 taskDescription: "Something really different is happeneing with trying something new I can feel myself changing everyday. I think I like this. I'm going to carry on."
@@ -87,7 +87,7 @@ const ProjectManager = () => {
                             {
                                 taskText: "Finish Project",
                                 priority: "moderate",
-                                status: "open",
+                                status: "Open",
                                 author: "Justin Kessler",
                                 taskDate: "11/2/20",
                                 taskDescription: "Something really different is happeneing with trying something new I can feel myself changing everyday. I think I like this. I'm going to carry on."
@@ -98,7 +98,7 @@ const ProjectManager = () => {
                             {
                                 taskText: "Finish Project",
                                 priority: "moderate",
-                                status: "open",
+                                status: "In-Progress",
                                 author: "Justin Kessler",
                                 taskDate: "11/2/20",
                                 taskDescription: "Something really different is happeneing with trying something new I can feel myself changing everyday. I think I like this. I'm going to carry on."
@@ -108,7 +108,7 @@ const ProjectManager = () => {
                             {
                                 taskText: "Become an Engineer",
                                 priority: "finished",
-                                status: "Closed",
+                                status: "Complete",
                                 author: "Justin Kessler",
                                 taskDate: "11/2/20"
                             }
@@ -117,7 +117,7 @@ const ProjectManager = () => {
                             {
                                 taskText: "Million dollar deals getting DONE",
                                 priority: "serious",
-                                status: "stuck",
+                                status: "Stuck",
                                 author: "Justin Kessler",
                                 taskDate: "11/2/20"
                             }
@@ -310,7 +310,7 @@ const ProjectManager = () => {
                 }
             ]
         }
-    ]))*/
+    ]))
 
 
     let data = JSON.parse(localStorage.getItem('projectv2'));
